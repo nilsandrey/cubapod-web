@@ -1,0 +1,79 @@
+<!--
+   _____      _           _____          _
+  / ____|    | |         |  __ \        | |
+ | |    _   _| |__   __ _| |__) |__   __| |
+ | |   | | | | '_ \ / _` |  ___/ _ \ / _` |
+ | |___| |_| | |_) | (_| | |  | (_) | (_| |
+  \_____\__,_|_.__/ \__,_|_|   \___/ \__,_|
+-->
+<!DOCTYPE html>
+<html lang="es" {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '34d6bfce620f3e79cad786618b4c4b455c15aac7';
+    window.smartsupp||(function(d) {
+      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+      c.type='text/javascript';c.charset='utf-8';c.async=true;
+      c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+    })(document);
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5NGQVTTXF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5NGQVTTXF');
+    </script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "CubaPod",
+      "url": "https://cubapod.net",
+      "foundingDate": "2020-03-01",
+      "description": "Plataforma cubana de podcasting, todos los pódcasts cubanos en un mismo lugar.",
+      "founders": [
+          {
+              "@type": "Person",
+              "name": "Carlos Lugones",
+              "url": "https://lugodev.com"
+          },
+          {
+              "@type": "Person",
+              "name": "Ernesto Acosta",
+              "url": "https://ernestoacosta.me"
+          }
+      ],
+      "logo": "https://cubapod.net/img-cubapod.jpg",
+      "email": "soporte@cubapod.net",
+      "sameAs" : [
+          "https://www.wikidata.org/wiki/Q102175918",
+          "https://twitter.com/CubaPod",
+          "https://facebook.com/CubaPod",
+          "https://t.me/CubaPod",
+          "https://t.me/CubaPodBot",
+          "https://linkedin.com/company/cubapod",
+          "https://instagram.com/cuba.pod",
+          "https://medium.com/cubapod"
+      ],
+      "contactPoint" : [
+          {
+              "@type" : "ContactPoint",
+              "contactType" : "customer service",
+              "email": "soporte@cubapod.net",
+              "url": "https://cubapod.net"
+          }
+      ]
+     }
+     </script>
+  </body>
+</html>

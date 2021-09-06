@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 900;
+  src: url('../static/fonts/titillium-web/TitilliumWeb-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 700;
+  src: url('../static/fonts/titillium-web/TitilliumWeb-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 600;
+  src: url('../static/fonts/titillium-web/TitilliumWeb-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 400;
+  src: url('../static/fonts/titillium-web/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 300;
+  src: url('../static/fonts/titillium-web/TitilliumWeb-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 200;
+  src: url('../static/fonts/titillium-web/TitilliumWeb-ExtraLight.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif !important
+}
+
+.margin-left-5 {
+  margin-left: 5pt;
+}
+
+.margin-left-10 {
+  margin-left: 10pt;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10pt;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20pt;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30pt;
+}
+
+.margin-top-10 {
+  margin-top: 10pt;
+}
+
+.margin-top-20 {
+  margin-top: 20pt;
+}
+
+.margin-top-30 {
+  margin-top: 30pt;
+}
+
+.margin-right-5 {
+  margin-right: 5pt;
+}
+
+.margin-right-10 {
+  margin-right: 10pt;
+}
+
+.primary-link {
+  transition: .2s;
+  color: hsl(217, 71%, 53%);
+}
+
+.primary-link:hover {
+  color: hsl(348, 86%, 61%);
+}
+
+.card {
+  border-radius: 10pt;
+}
+
+.card-header {
+  border-radius: 10pt 10pt 0 0;
+}
+
+.has-telegram-bg {
+  background: #1f9bda;
+}
+
+.has-twitter-bg {
+  background: #1c9cea;
+}
+
+.wrap-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-padding {
+  margin-top: 0.1rem;
+}
+
+.social-twitter:hover {
+  background-color: #4099FF !important;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.socials > a {
+  margin: 4px;
+  color: #363636;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    text-align: justify;
+  }
+  .title {
+    text-align: center !important;
+  }
+  .subtitle {
+    text-align: center !important;
+  }
+}
+
+.card-image figure {
+  overflow: hidden;
+  min-height: 150pt;
+  max-height: 150pt;
+  border-radius: 10pt
+}
+
+.card-image figure img {
+  width: 100%;
+}
+
+a, a:hover {
+  transition: 200ms;
+}
+
+h1 {
+  font-size: 23pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+a {
+  color: #3E84FE;
+}
+
+a:hover {
+  color: #2855a4;
+  text-decoration: none;
+}
+
+.disc-list {
+  list-style: disc;
+  margin-left: 20pt;
+}
+
+.wave-container {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wave-container > svg {
+  display: block;
+}
+
+.not-found {
+  font-size: 80pt;
+}
+
+/* Team */
+.member {}
+
+.member .member-image {
+  margin-bottom: 5pt;
+}
+
+.member .member-image img {
+  border-radius: 50%;
+}
+
+.member .member-content {
+  padding: 10pt;
+}
+
+.member .member-content .member-name {
+  font-weight: bold;
+}
+
+.member .member-content .member-role {
+  margin-bottom: 10pt;
+}
+
+.member .member-content .member-bio {
+  font-size: 10pt;
+  margin-bottom: 5pt;
+}
+
+.member .member-content .socials .social {
+  margin: 0 5pt 0 0;
+}
+
+.member .member-content .socials .social:last-child {
+  margin-right: 0;
+}
+
+.dot-separator::after {
+  content: '·';
+  margin: 0 5pt 0 5pt;
+}
+
+.tabs ul {
+  border: none !important;
+  margin-bottom: 10pt !important;
+}
+
+.loading-overlay {
+  background: #ffffff !important;
+}
+
+.loading-background {
+  background: none !important;
+}
+
+.clickable {
+  cursor: default;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+/* override Buefy styles */
+:root {
+  --is-primary: #2c4bff;
+  --is-primary-hover: #223ed8;
+  --is-secondary: #234376;
+}
+
+.button.is-primary {
+  background: var(--is-primary);
+}
+
+.button.is-primary:hover {
+  background: var(--is-primary-hover);
+}
+
+.has-background-primary {
+  background: var(--is-primary) !important;
+}
+
+.hero.is-primary {
+  color: white;
+  background: var(--is-primary) !important;
+}
+
+.hero.is-secondary {
+  color: rgb(233, 233, 233);
+  background: var(--is-secondary) !important;
+}
+
+.hero.is-primary a, .hero.is-secondary a {
+  color: rgb(233, 233, 233) !important;
+}
+
+.spinning {
+  -webkit-animation: spinning 2s ease infinite;
+  animation: spinning 2s ease infinite;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
